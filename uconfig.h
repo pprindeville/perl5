@@ -40,12 +40,6 @@
  */
 /*#define HAS_BCOPY	/ **/
 
-/* HAS_BZERO:
- *	This symbol is defined if the bzero() routine is available to
- *	set a memory block to 0.
- */
-/*#define HAS_BZERO	/ **/
-
 /* HAS_CBRT:
  *	This symbol, if defined, indicates that the cbrt() (cube root)
  *	function is available.
@@ -281,12 +275,6 @@
  *	own version.
  */
 /*#define HAS_MEMMOVE	/ **/
-
-/* HAS_MEMSET:
- *	This symbol, if defined, indicates that the memset routine is available
- *	to set blocks of memory.
- */
-#define HAS_MEMSET	/**/
 
 /* HAS_MKDIR:
  *	This symbol, if defined, indicates that the mkdir routine is available
@@ -5375,6 +5363,6 @@
 #endif
 
 /* Generated from:
- * a34ee88addcb2b4b574aaedc7298c8939918c15da04b98c7cc0af60eedc4e902 config_h.SH
- * 8af4393517f8e89504bdd88db040c61f8ea997b941eb1c6bde674ee35c4af21d uconfig.sh
+ * 09c489a8023648f79eb19821f331876b61656984850e2d5921e31dd05bbe99b2 config_h.SH
+ * 0981f750efba4eec7e3cc7b1daca137f158b2afcd94cc92a6a3c4c907aa6f43c uconfig.sh
  * ex: set ro: */

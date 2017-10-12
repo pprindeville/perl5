@@ -3370,17 +3370,6 @@
 /*#define	USE_SITECUSTOMIZE		/ **/
 #endif
 
-/* HAS_SNPRINTF:
- *	This symbol, if defined, indicates that the snprintf () library
- *	function is available for use.
- */
-/* HAS_VSNPRINTF:
- *	This symbol, if defined, indicates that the vsnprintf () library
- *	function is available for use.
- */
-/*#define HAS_SNPRINTF	/ **/
-/*#define HAS_VSNPRINTF	/ **/
-
 /* HAS_SOCKATMARK:
  *	This symbol, if defined, indicates that the sockatmark routine is
  *	available to test whether a socket is at the out-of-band mark.
@@ -5293,6 +5282,6 @@
 #endif
 
 /* Generated from:
- * 505941beb4103a8deeeb32da9e5eae18e62d4ed3e550202a6ccaab71dba51ccf config_h.SH
+ * 366a441fa16438a1bd8c51bd40bd565d7909bfc903115a5ff38c9c8049a863f7 config_h.SH
  * eeacc854a42a22e39cc9f3a7c25710ddf49c8414e229deb76e6a0823e2fa0bd7 uconfig.sh
  * ex: set ro: */

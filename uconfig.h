@@ -1072,14 +1072,6 @@
  */
 /*#define HAS_SAFE_BCOPY	/ **/
 
-/* HAS_SAFE_MEMCPY:
- *	This symbol, if defined, indicates that the memcpy routine is available
- *	to copy potentially overlapping memory blocks.  If you need to
- *	copy overlapping memory blocks, you should check HAS_MEMMOVE and
- *	use memmove() instead, if available.
- */
-/*#define HAS_SAFE_MEMCPY	/ **/
-
 /* HAS_SANE_MEMCMP:
  *	This symbol, if defined, indicates that the memcmp routine is available
  *	and can be used to compare relative magnitudes of chars with their high
@@ -5363,6 +5355,6 @@
 #endif
 
 /* Generated from:
- * 09c489a8023648f79eb19821f331876b61656984850e2d5921e31dd05bbe99b2 config_h.SH
- * 0981f750efba4eec7e3cc7b1daca137f158b2afcd94cc92a6a3c4c907aa6f43c uconfig.sh
+ * 60077b3f76697e42376168a0090a62814b3eaad249c0ada5a40d0bf4e212fada config_h.SH
+ * 2b7acd205dfc724135393d7d9c980a7e4bc2fe30b23210f2582ff2ce3eecd412 uconfig.sh
  * ex: set ro: */

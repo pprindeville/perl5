@@ -1455,15 +1455,10 @@ EXTERN_C char *crypt(const char *, const char *);
 #undef UV
 #endif
 
-/* For the times when you want the return value of sprintf, and you want it
-   to be the length. Can't have a thread variable passed in, because C89 has
-   no varargs macros.
-*/
-#ifdef SPRINTF_RETURNS_STRLEN
-#  define my_sprintf sprintf
-#else
-#  define my_sprintf Perl_my_sprintf
-#endif
+/* This used to be conditionally defined based on whether we had a sprintf()
+ * that correctly returns the string length (as required by C89), but we no
+ * longer need that. */
+#define my_sprintf sprintf
 
 /*
  * If we have v?snprintf() and the C99 variadic macros, we can just

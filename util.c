@@ -4870,24 +4870,11 @@ Perl_mem_log_del_sv(const SV *sv,
 /*
 =for apidoc my_sprintf
 
-The C library C<sprintf>, wrapped if necessary, to ensure that it will return
-the length of the string written to the buffer.  Only rare pre-ANSI systems
-need the wrapper function - usually this is a direct call to C<sprintf>.
+Older versions of Perl supported pre-C89 systems that needed this to be
+a wrapper function, but nowadays this is always a direct call to C<sprintf>.
 
 =cut
 */
-#ifndef SPRINTF_RETURNS_STRLEN
-int
-Perl_my_sprintf(char *buffer, const char* pat, ...)
-{
-    va_list args;
-    PERL_ARGS_ASSERT_MY_SPRINTF;
-    va_start(args, pat);
-    vsprintf(buffer, pat, args);
-    va_end(args);
-    return strlen(buffer);
-}
-#endif
 
 /*
 =for apidoc quadmath_format_single

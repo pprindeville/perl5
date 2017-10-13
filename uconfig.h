@@ -3313,14 +3313,6 @@
  */
 /*#define HAS_SOCKS5_INIT		/ **/
 
-/* SPRINTF_RETURNS_STRLEN:
- *	This variable defines whether sprintf returns the length of the string
- *	(as per the ANSI spec). Some C libraries retain compatibility with
- *	pre-ANSI C and return a pointer to the passed in buffer; for these
- *	this variable will be undef.
- */
-/*#define SPRINTF_RETURNS_STRLEN	/ **/
-
 /* HAS_SQRTL:
  *	This symbol, if defined, indicates that the sqrtl routine is
  *	available to do long double square roots.
@@ -5205,6 +5197,6 @@
 #endif
 
 /* Generated from:
- * a827061cb7f253d0b8eccea86f8e3e3e24ee39c8871ef980b5275fc047333fdf config_h.SH
- * 880043c34b702922fb99fad59d1f1e332de9b10d80e59cd89f6e0a38896dd932 uconfig.sh
+ * bb51f39892deefcf4e8f9d73f3782e46e694a18b776deca695b804a1ea16eb8b config_h.SH
+ * ef64eb4513652afdf529f2215281a3d1026188f5e52e6c7a464e6e14d7498b9a uconfig.sh
  * ex: set ro: */

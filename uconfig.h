@@ -1977,24 +1977,12 @@
 /*#define USE_STAT_BLOCKS 	/ **/
 #endif
 
-/* HAS_STRERROR:
- *	This symbol, if defined, indicates that the strerror routine is
- *	available to translate error numbers to strings. See the writeup
- *	of Strerror() in this file before you try to define your own.
- */
 /* HAS_SYS_ERRLIST:
  *	This symbol, if defined, indicates that the sys_errlist array is
  *	available to translate error numbers to strings. The extern int
  *	sys_nerr gives the size of that table.
  */
-/* Strerror:
- *	This preprocessor symbol is defined as a macro if strerror() is
- *	not available to translate error numbers to strings but sys_errlist[]
- *	array is there.
- */
-/*#define HAS_STRERROR		/ **/
 /*#define HAS_SYS_ERRLIST	/ **/
-#define Strerror(e) strerror(e)
 
 /* HAS_STRTOUL:
  *	This symbol, if defined, indicates that the strtoul routine is
@@ -5155,6 +5143,6 @@
 #endif
 
 /* Generated from:
- * 75143a8000800f3ed94e53f3bdbdd0745d34484902e4eafa28b3e3e12da20b6f config_h.SH
- * 0f8b45ccb3d3a70c8a414d3806b734a66db4858968d9442d254f862747c5effc uconfig.sh
+ * b70c05ccb1c8d1ebb5af96d7fb7c782365f2550b6644d5bc631d594e0a3b682f config_h.SH
+ * d735acd31a0f795383900bc84a9261bb3d2e8ca7b21b6db1576bcde03ffb707a uconfig.sh
  * ex: set ro: */

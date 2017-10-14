@@ -3512,12 +3512,6 @@
 /*#define	FFLUSH_NULL 		/ **/
 /*#define	FFLUSH_ALL 		/ **/
 
-/* I_ASSERT:
- *	This symbol, if defined, indicates that <assert.h> exists and
- *	could be included by the C program to get the assert() macro.
- */
-#define	I_ASSERT		/**/
-
 /* I_BFD:
  *	This symbol, if defined, indicates that <bfd.h> exists and
  *	can be included.
@@ -5137,6 +5131,6 @@
 #endif
 
 /* Generated from:
- * e49baf040fbec2de0d2139a66ed64d5e214aa2f22c30b88e862471f4fd6ca14c config_h.SH
- * d0ea69485e9a5899968529eb452743be011373b7a1db5ad79d417c9ff4f7455f uconfig.sh
+ * 318c4b8e6c2a6560ad41a729e1be642fa566d9a2f7df2c25124d9f1eb6342e37 config_h.SH
+ * 0b1c7e57e25a426a28f6ab7ecda7ec96caa99de919ac189c46dc744a8ce9075a uconfig.sh
  * ex: set ro: */

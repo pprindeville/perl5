@@ -626,12 +626,6 @@
  */
 /*#define	I_LOCALE		/ **/
 
-/* I_MEMORY:
- *	This symbol, if defined, indicates to the C program that it should
- *	include <memory.h>.
- */
-/*#define I_MEMORY		/ **/
-
 /* I_NETINET_IN:
  *	This symbol, if defined, indicates to the C program that it should
  *	include <netinet/in.h>. Otherwise, you may try <sys/in.h>.
@@ -5131,6 +5125,6 @@
 #endif
 
 /* Generated from:
- * 318c4b8e6c2a6560ad41a729e1be642fa566d9a2f7df2c25124d9f1eb6342e37 config_h.SH
- * 0b1c7e57e25a426a28f6ab7ecda7ec96caa99de919ac189c46dc744a8ce9075a uconfig.sh
+ * e270e7ad17b919b302bea54f8e9f19418292c5233e55e252189d336f8f12a0ce config_h.SH
+ * cf9dfcab279de537afd6dec0d977cd3d5c171c21c2303b55bea5f979dd8611f2 uconfig.sh
  * ex: set ro: */

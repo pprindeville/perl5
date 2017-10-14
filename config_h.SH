@@ -661,12 +661,6 @@ sed <<!GROK!THIS! >$CONFIG_H -e 's!^#undef\(.*/\)\*!/\*#define\1 \*!' -e 's!^#un
  */
 #$i_locale	I_LOCALE		/**/
 
-/* I_MATH:
- *	This symbol, if defined, indicates to the C program that it should
- *	include <math.h>.
- */
-#$i_math I_MATH		/**/
-
 /* I_MEMORY:
  *	This symbol, if defined, indicates to the C program that it should
  *	include <memory.h>.
@@ -4024,7 +4018,7 @@ sed <<!GROK!THIS! >$CONFIG_H -e 's!^#undef\(.*/\)\*!/\*#define\1 \*!' -e 's!^#un
 #define	NVSIZE		$nvsize		/**/
 #$d_nv_preserves_uv	NV_PRESERVES_UV
 #define	NV_PRESERVES_UV_BITS	$nv_preserves_uv_bits
-#define	NV_OVERFLOWS_INTEGERS_AT	$nv_overflows_integers_at
+#define	NV_OVERFLOWS_INTEGERS_AT	($nv_overflows_integers_at)
 #$d_nv_zero_is_allbits_zero	NV_ZERO_IS_ALLBITS_ZERO
 #if UVSIZE == 8
 #   ifdef BYTEORDER

@@ -626,12 +626,6 @@
  */
 /*#define	I_LOCALE		/ **/
 
-/* I_MATH:
- *	This symbol, if defined, indicates to the C program that it should
- *	include <math.h>.
- */
-#define I_MATH		/**/
-
 /* I_MEMORY:
  *	This symbol, if defined, indicates to the C program that it should
  *	include <memory.h>.
@@ -3989,7 +3983,7 @@
 #define	NVSIZE		8		/**/
 #undef	NV_PRESERVES_UV
 #define	NV_PRESERVES_UV_BITS	0
-#define	NV_OVERFLOWS_INTEGERS_AT	256.0*256.0*256.0*256.0*256.0*256.0*2.0*2.0*2.0*2.0*2.0
+#define	NV_OVERFLOWS_INTEGERS_AT	(256.0*256.0*256.0*256.0*256.0*256.0*2.0*2.0*2.0*2.0*2.0)
 #undef	NV_ZERO_IS_ALLBITS_ZERO
 #if UVSIZE == 8
 #   ifdef BYTEORDER
@@ -5143,6 +5137,6 @@
 #endif
 
 /* Generated from:
- * b70c05ccb1c8d1ebb5af96d7fb7c782365f2550b6644d5bc631d594e0a3b682f config_h.SH
- * d735acd31a0f795383900bc84a9261bb3d2e8ca7b21b6db1576bcde03ffb707a uconfig.sh
+ * e49baf040fbec2de0d2139a66ed64d5e214aa2f22c30b88e862471f4fd6ca14c config_h.SH
+ * d0ea69485e9a5899968529eb452743be011373b7a1db5ad79d417c9ff4f7455f uconfig.sh
  * ex: set ro: */

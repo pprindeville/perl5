@@ -3568,6 +3568,12 @@
  */
 /*#define HAS_STRLCPY		/ **/
 
+/* HAS_STRNLEN:
+ *	This symbol, if defined, indicates that the strnlen () routine is
+ *	available to check the length of a string up to a maximum.
+ */
+/*#define HAS_STRNLEN		/ **/
+
 /* HAS_STRTOLD:
  *	This symbol, if defined, indicates that the strtold routine is
  *	available to convert strings to long doubles.
@@ -4228,7 +4234,7 @@
 #define	NVSIZE		8		/**/
 #undef	NV_PRESERVES_UV
 #define	NV_PRESERVES_UV_BITS	0
-#define	NV_OVERFLOWS_INTEGERS_AT	256.0*256.0*256.0*256.0*256.0*256.0*2.0*2.0*2.0*2.0*2.0
+#define	NV_OVERFLOWS_INTEGERS_AT	(256.0*256.0*256.0*256.0*256.0*256.0*2.0*2.0*2.0*2.0*2.0)
 #undef	NV_ZERO_IS_ALLBITS_ZERO
 #if UVSIZE == 8
 #   ifdef BYTEORDER
@@ -5382,6 +5388,6 @@
 #endif
 
 /* Generated from:
- * 2de7484af521c1029bb9853f03e27d74d89b7f91d1ce1228865d6c4808d4131d config_h.SH
- * 7e93e67e8d10f41bf582fd383aa099ab2479b61979a341e2f1bd96f8873442cc uconfig.sh
+ * fc8173e98ae6cbf256b9178b8fbe6a62c9b91657d7bf28de26056b3b6388fd18 config_h.SH
+ * 12ddcd2387eb9f352be1c100cc2fb52503b2f874f50b61b5ec64ebf460bbefa0 uconfig.sh
  * ex: set ro: */

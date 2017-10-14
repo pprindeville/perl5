@@ -3603,6 +3603,12 @@ sed <<!GROK!THIS! >$CONFIG_H -e 's!^#undef\(.*/\)\*!/\*#define\1 \*!' -e 's!^#un
  */
 #$d_strlcpy HAS_STRLCPY		/**/
 
+/* HAS_STRNLEN:
+ *	This symbol, if defined, indicates that the strnlen () routine is
+ *	available to check the length of a string up to a maximum.
+ */
+#$d_strnlen HAS_STRNLEN		/**/
+
 /* HAS_STRTOLD:
  *	This symbol, if defined, indicates that the strtold routine is
  *	available to convert strings to long doubles.
@@ -4263,7 +4269,7 @@ sed <<!GROK!THIS! >$CONFIG_H -e 's!^#undef\(.*/\)\*!/\*#define\1 \*!' -e 's!^#un
 #define	NVSIZE		$nvsize		/**/
 #$d_nv_preserves_uv	NV_PRESERVES_UV
 #define	NV_PRESERVES_UV_BITS	$nv_preserves_uv_bits
-#define	NV_OVERFLOWS_INTEGERS_AT	$nv_overflows_integers_at
+#define	NV_OVERFLOWS_INTEGERS_AT	($nv_overflows_integers_at)
 #$d_nv_zero_is_allbits_zero	NV_ZERO_IS_ALLBITS_ZERO
 #if UVSIZE == 8
 #   ifdef BYTEORDER

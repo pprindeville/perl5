@@ -877,6 +877,7 @@ strerror_r_proto=''
 d_strftime=''
 d_strlcat=''
 d_strlcpy=''
+d_strnlen=''
 d_strtod=''
 d_strtol=''
 d_strtold=''
@@ -19521,6 +19522,10 @@ eval $inlibc
 set strlcpy d_strlcpy
 eval $inlibc
 
+: see if strnlen exists
+set strnlen d_strnlen
+eval $inlibc
+
 : see if strtod exists
 set strtod d_strtod
 eval $inlibc
@@ -24932,6 +24937,7 @@ d_strerror_r='$d_strerror_r'
 d_strftime='$d_strftime'
 d_strlcat='$d_strlcat'
 d_strlcpy='$d_strlcpy'
+d_strnlen='$d_strnlen'
 d_strtod='$d_strtod'
 d_strtol='$d_strtol'
 d_strtold='$d_strtold'

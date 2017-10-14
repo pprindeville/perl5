@@ -632,12 +632,6 @@
  */
 /*#define I_NETINET_IN	/ **/
 
-/* I_STRING:
- *	This symbol, if defined, indicates to the C program that it should
- *	include <string.h> (USG systems) instead of <strings.h> (BSD systems).
- */
-#define I_STRING		/**/
-
 /* I_SYS_DIR:
  *	This symbol, if defined, indicates to the C program that it should
  *	include <sys/dir.h>.
@@ -5125,6 +5119,6 @@
 #endif
 
 /* Generated from:
- * e270e7ad17b919b302bea54f8e9f19418292c5233e55e252189d336f8f12a0ce config_h.SH
- * cf9dfcab279de537afd6dec0d977cd3d5c171c21c2303b55bea5f979dd8611f2 uconfig.sh
+ * 74b09e18277fceaf1da77f32d9ba1c1c201d23d5bd83e824cd923ae40ed9861b config_h.SH
+ * 565b0c2f983d855acce581b5835bcdcc3f6c9bdd9392445f154b2ad7a5de78ed uconfig.sh
  * ex: set ro: */

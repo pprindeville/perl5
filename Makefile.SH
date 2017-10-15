@@ -742,7 +742,7 @@ bitcount.h: generate_uudmap$(HOST_EXE_EXT)
 	./generate_uudmap$(HOST_EXE_EXT) $(generated_headers)
 
 generate_uudmap$(HOST_EXE_EXT): generate_uudmap$(OBJ_EXT)
-	-@rm generate_uudmap$(HOST_EXE_EXT)
+	@$(RMS) generate_uudmap$(HOST_EXE_EXT)
 	$(LNS) $(HOST_GENERATE) generate_uudmap$(HOST_EXE_EXT)
 
 !NO!SUBS!

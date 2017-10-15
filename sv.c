@@ -12370,7 +12370,10 @@ Perl_sv_vcatpvfn_flags(pTHX_ SV *const sv, const char *const pat, const STRLEN p
 	    if (args) {
 		eptr = va_arg(*args, char*);
 		if (eptr)
-		    elen = strlen(eptr);
+                    if (has_precis)
+                        elen = strnlen(eptr, precis);
+                    else
+                        elen = strlen(eptr);
 		else {
 		    eptr = (char *)nullstr;
 		    elen = sizeof nullstr - 1;
